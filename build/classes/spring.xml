@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+    
+    <!-- user interface -->
+   <bean id = "ui" class = "ui.UserSpace"/>
+    
+   
+    <!-- shapes -->
+    <bean id = "circle" class = "spring.factory.Circle">
+        <property name = "pointA" ref = "point1" />        
+    </bean> 
+    
+    <bean id = "line" class = "spring.factory.Line">
+        <property name = "pointA" ref = "point1" />        
+        <property name = "pointB" ref = "point2" />        
+    </bean> 
+    
+    <bean id = "triangel" class = "spring.factory.Triangel">
+        <property name = "pointA" ref = "point1" />        
+        <property name = "pointB" ref = "point2" />        
+        <property name = "pointC" ref = "point3" />        
+    </bean> 
+    
+    <bean id = "square" class = "spring.factory.Square">
+        <property name = "pointA" ref = "point1" />        
+        <property name = "pointB" ref = "point2" />        
+        <property name = "pointC" ref = "point3" />        
+        <property name = "pointD" ref = "point4" />        
+    </bean> 
+    
+    
+    <!-- points used in shapes -->
+        <bean id = "point1" class = "spring.factory.Point">
+        <property name = "x" value = "0"/>
+        <property name = "y" value = "0"/>
+    </bean>
+    
+        <bean id = "point2" class = "spring.factory.Point">
+        <property name = "x" value = "10"/>
+        <property name = "y" value = "10"/>
+    </bean>
+    
+        <bean id = "point3" class = "spring.factory.Point">
+        <property name = "x" value = "-10"/>
+        <property name = "y" value = "10"/>
+    </bean>
+    
+        <bean id = "point4" class = "spring.factory.Point">
+        <property name = "x" value = "0"/>
+        <property name = "y" value = "10"/>
+    </bean>
+
+</beans>

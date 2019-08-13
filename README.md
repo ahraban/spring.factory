@@ -9,5 +9,5 @@ User Experience:
 Technical solution:
 - simple java EE application that uses Spring Framework as a factory
 - whole factory configuration is stored in "spring.xml"
-- no annotations used
+- no annotations, init-methods, autowiring, pre/post processors used
 - advanced features will be used in forthcoming projects
